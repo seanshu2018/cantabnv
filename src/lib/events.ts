@@ -7,6 +7,8 @@ import { pacificCalendarToday } from '$lib/pacific-date';
 export interface Event {
 	title: string;
 	date: string;
+	/** Public date label for an event whose exact date is TBD. */
+	dateLabel?: string;
 	location: string;
 	description: string;
 	slug?: string;
@@ -19,6 +21,14 @@ export interface Event {
 }
 
 export const events: Event[] = [
+	{
+		title: 'CES 2027 Cambridge Alumni Meetup',
+		date: '2027-01-06', // Internal sorting placeholder; exact meetup date TBD.
+		dateLabel: 'January 2027 (date TBD)',
+		location: 'Las Vegas (venue TBD)',
+		description: 'Join fellow University of Cambridge alumni and friends during CES 2027 to reconnect and network. Exact date, time, venue, and format to be announced.',
+		slug: 'ces-2027-alumni-meetup'
+	},
 	{
 		title: 'Inaugural meeting',
 		date: '2026-02-16',
