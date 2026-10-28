@@ -34,7 +34,7 @@
 			{#each upcoming as event (event.slug ?? event.title)}
 				<li class="event-card">
 					<h3>{event.title}</h3>
-					<p class="meta">{formatPacificCalendarDateLong(event.date)}{#if event.time} · {event.time}{/if} · {event.location}</p>
+					<p class="meta">{event.dateLabel ?? formatPacificCalendarDateLong(event.date)}{#if event.time} · {event.time}{/if} · {event.location}</p>
 					<p>{event.description}</p>
 					{#if event.mapUrl}
 						<p>
@@ -54,7 +54,7 @@
 			{#each past as event (event.slug ?? event.title)}
 				<li class="event-card past">
 					<h3>{event.title}</h3>
-					<p class="meta">{formatPacificCalendarDateLong(event.date)}{#if event.time} · {event.time}{/if} · {event.location}</p>
+					<p class="meta">{event.dateLabel ?? formatPacificCalendarDateLong(event.date)}{#if event.time} · {event.time}{/if} · {event.location}</p>
 					<p>{event.description}</p>
 					{#if event.mapUrl}
 						<p>
