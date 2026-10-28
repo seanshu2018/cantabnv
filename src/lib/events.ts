@@ -23,10 +23,10 @@ export interface Event {
 export const events: Event[] = [
 	{
 		title: 'CES 2027 Cambridge Alumni Meetup',
-		date: '2027-01-06', // Internal sorting placeholder; exact meetup date TBD.
-		dateLabel: 'January 2027 (date TBD)',
+		date: '2027-01-03',
+		dateLabel: 'January 3, 2027',
 		location: 'Las Vegas (venue TBD)',
-		description: 'Join fellow University of Cambridge alumni and friends during CES 2027 to reconnect and network. Exact date, time, venue, and format to be announced.',
+		description: 'Join fellow University of Cambridge alumni and friends during CES 2027 to reconnect and network. Time, venue, and format to be announced.',
 		slug: 'ces-2027-alumni-meetup'
 	},
 	{
